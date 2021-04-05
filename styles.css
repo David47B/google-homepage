@@ -14,6 +14,10 @@ body {
     color:#222;
 }
 
+ul {
+    list-style: none;
+}
+
 /* Icons */
 span.material-icons {
     color: #5f6368;
@@ -86,9 +90,7 @@ nav ul.account li:not(:last-child) {
 .search-container {
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-self:center;
-    height:100vh;
+    transform:translateY(12.5rem);
 }
 
 /* Logo */
@@ -135,9 +137,8 @@ form {
     width:100%;
     border:1px solid #dfe1e5;
     border-radius:30px;
-    padding:1rem 1rem 1rem 3rem;
-    font-size:1.2rem;
-    font-weight: 100;
+    padding:.7rem 1rem .7rem 3rem;
+    font-size:1.1rem;
 }
 
 .search-input:hover {
@@ -151,4 +152,33 @@ form {
 }
 .search-options a:not(:last-child) {
     margin-right:1rem;
+}
+
+/* Footer */
+footer {
+    display:flex;
+    position: absolute;
+    bottom:0;
+    background:#eee;
+    border-top:1px solid#ddd;
+    width:100%;
+    padding:1rem 2rem;
+}
+.utility-nav {
+    width:50%;
+    display:flex;
+    justify-content: flex-start;
+}
+.privacy-nav {
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.utility-nav li:not(:last-child),
+.privacy-nav li:not(:last-child) {
+    margin-right:1rem;
+}
+.utility-nav a,
+.privacy-nav a {
+    color:#888;
 }
