@@ -130,9 +130,15 @@ form {
     position:absolute;
     top:50%;
     transform: translateY(-50%);
-    left:1rem;
     color:#bbb;
 }
+.input-container span.search-icon {
+    left:1rem;
+}
+.input-container span.mic-icon {
+    right:1rem;
+}
+
 .search-input {
     width:100%;
     border:1px solid #dfe1e5;
@@ -181,4 +187,41 @@ footer {
 .utility-nav a,
 .privacy-nav a {
     color:#888;
+}
+
+@media (max-width:579px) {
+    header {
+        padding:.5rem;
+    }
+    nav ul.utility.utility {
+        display:none;
+    }
+    nav ul.account {
+        width:100%;
+    }
+    nav ul.account li:first-child,
+    nav ul.account li:nth-child(2) {
+        display:none;
+    }
+    .btn {
+        padding:.5rem 1rem;
+        font-size:.8rem;
+    }
+    .search-container {
+        transform:translateY(7rem);
+    }
+    .logo img {
+        width:60%;
+    }
+    form .input-container {
+        width:80%;
+    }
+    .utility-nav {
+        display: none;
+    }
+    .privacy-nav {
+        width:100%;
+        font-size:.8rem;
+        justify-content: center;
+    }
 }
